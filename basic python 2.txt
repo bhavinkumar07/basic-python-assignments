@@ -1,0 +1,145 @@
+1.What are the two values of the Boolean data type? How do you write them?
+There are two boolean data types, True and False.True is 1 and False is 0.
+As python is a case sensative language so fisrt letters are capital True False
+They are mostly used as conditional operations.
+
+2. What are the three different types of Boolean operators?
+They are "and" ,"or" and "not" boolean operators.
+
+3. Make a list of each Boolean operator's truth tables (i.e. every possible combination of Boolean
+values for the operator and what it evaluate ).
+
+True  and True  is True
+True  and False is False
+False and True  is False
+False and False is False 
+
+True  or True   is True
+True  or False  is True
+False or True   is True
+False or False  is False
+
+not True  is False
+not False is True
+
+4. What are the values of the following expressions?
+(5 > 4) and (3 == 5) False
+not (5 > 4) False
+(5 > 4) or (3 == 5) True
+not ((5 > 4) or (3 == 5)) False
+(True and True) and (True == False) False
+(not False) or (not True) True
+
+5. What are the six comparison operators?
+> , < , == , <= , >= ,!=
+
+6. How do you tell the difference between the equal to and assignment operators?Describe a
+condition and when you would use one.
+When we would like to assign some values to variables the single equals sign "=" is used or we can say operator is used.
+And when we have and condition of comparison of two variables or sometheing we usedouble  equal operator "=="
+Ex-
+x=10  # Assignment operator
+if x==10: # equal operator
+	print("hello")
+Above example clearly says that "=" in x=10 is assign operator.Where value of x is assign 10 by "=" operator.
+And if 	the condition x is euqal to 10 is true then print statement will execute.
+
+7. Identify the three blocks in this code:
+spam = 0
+if spam == 10: #First Block
+	print("eggs")
+if spam > 5:   #Second Block
+	print('bacon')
+else:         #Third Block
+	print('ham')
+	print('spam')
+	print('spam') 
+	
+8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints
+Greetings! if anything else is stored in spam.
+spam=25
+if spam==1:
+    print('Hello')
+elif spam==2:
+    print("Houwdy")
+else:
+    print("""Greetings""")
+
+9.If your programme is stuck in an endless loop, what keys you’ll press?
+CTRL+C is key use.
+
+
+10. How can you tell the difference between break and continue?
+break is use to stop from the current loop whereas continue is use to stop from the current execution.
+Ex-
+for char in "bhavin":
+    if char == "a":
+        continue
+    print(char)
+	#o/  a will skip
+	b
+	h
+	v
+	i
+	n	
+in the above example if the condition will true then it will stop the current execution and will execute next iteration of the same loop
+
+for char in "bhavin":
+    if char == "a":
+        break
+    print(char)
+in the above if the condition will true then the whole loop will stop.
+o/p
+b
+h 
+ 	
+
+11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+All are same as in range(10) it is by default take range(0,10,1)
+in range(0,10) it will take by defalul range(0,10,1)
+range(0,10,1) range(starting position 0 , (10-1)th position ,jump)
+0is the starting postion
+
+
+
+12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent
+program that prints the numbers 1 to 10 using a while loop.
+# For loop
+for i in range(10):
+    print(i+1)
+# While loop	
+i=1
+while i<11:
+    print(i)
+    i=i+1
+	
+13. If you had a function named bacon() inside a module named spam, how would you call it after
+importing spam?
+spam.bacon()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
