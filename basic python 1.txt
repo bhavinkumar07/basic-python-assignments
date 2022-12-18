@@ -1,0 +1,70 @@
+PYTHON BASIC ASSIGNMENT 1 
+
+1. In the below elements which of them are values or an expression? eg:- values can be
+integer or string and expressions will be mathematical operators.
+* is mathematical operator for multiplication
+'hello' is value as string
+-87.8 is a value as float
+- is a mathematical operator for subtractor
+/ is a mathematical operator for division
++ is a mathematical operator for addition
+6 is a value as a integer
+
+2. What is the difference between string and variable?
+String is collection of characters,numbers,sentence, special characters etc. In python it is define in double or single quots.
+
+Whereas variables are as its name,it can be declared by the programmer for its use to assign datatypes like ,
+a=12 'a' is a variable and its value is 12 integer.
+b="bhavin saxena"   'b' is a variable and "bhavin saxena" is a sring
+
+Variable name should not be some reserved key word like pass,continue,break etc.
+
+String must be declared in double quots or single quots but variable can be declared any char or word except integer,float etc.
+
+3. Describe three different data types.	
+boolean: In this type it has only two values either True or False. In programming if there are some conditions where there are only two options True or False
+
+string: String is a type where it comes in sinngle or double quots. We can add anything like characters,sentence, word,specialcharacter, numbers etc.example a="hello ineuron"
+
+list: List is a datatype where it is defines in square brackets [ ]. We can add any datatype in list like string,integer,list in list,imaginary numbers,boolean etc.
+Ex= l=[1,2,"hello",True,1+5j,[2,"bhavin"]]
+
+4. What is an expression made up of? What do all expressions do?
+expression is made up of operators,value,variables.
+all expressions comes to some value as a result.
+Ex-  x=5
+	 x=x+1   these two lines are combination of expressions and it comes to its result x=6.So x,=,+,1 are expressions.
+
+5. This assignment statements, like spam = 10. What is the difference between an
+expression and a statement?
+expressions are spam,=,10,like.
+statement is a group of expressions for some task to be finished . 
+
+
+6. After running the following code, what does the variable bacon contain?
+bacon=22
+bacon+1 After running this code bacon value is will remain same as 22 but the output will be 23.
+If bacon=bacon+1 is the code then the value of bacon will be 23 as well as output will 23.
+
+7. What should the values of the following two terms be?
+The output will be same as 'spamspamspam' because in 'spam'+'spamspam' both are same datatypes as string so '+' operator will concatinate
+And * operator in sring will alse repeate the string the number which is multipy.
+
+8. Why is eggs a valid variable name while 100 is invalid?
+100 is invalid variable because it is a number datatype and number is not used for variables.
+If we use  egg100 veriable then it is a valid variable name as 100 is used after egg.
+
+9. What three functions can be used to get the integer, floating-point number, or string
+version of a value?
+for integer=int()
+for floating-point = float()
+for string=string()
+
+10. Why does this expression cause an error? How can you fix it?
+I have eaten "99+" burries"
+If we want to add 99 in between two strings the we can convert 99 into srting by str() function "I have eaten "+str(99)+" burries"
+or 
+"I have eaten "+"99"+"burries" by adding 99 in single or double quots
+
+
+
