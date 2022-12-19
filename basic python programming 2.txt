@@ -1,0 +1,50 @@
+1. Write a Python program to convert kilometers to miles?
+km=float(input("Enter kilimeter : "))
+mil=km*(.62137)
+print("Miles of",km ,"is %0.2f"%mil)
+
+2. Write a Python program to convert Celsius to Fahrenheit?
+tem=float(input("Enter tempreture in Celcious :"))
+cel=(1.8*(tem))+32
+print("Celcious of ",tem,"is %0.2f"%cel)
+
+3. Write a Python program to display calendar?
+import calendar
+y=int(input("Please enter Year :"))
+mm=int(input("Please enter month :"))
+print(calendar.month(y,mm))
+
+4. Write a Python program to solve quadratic equation?	
+import cmath
+import math
+a=float(input("Enter co-eficiant a :"))
+b=float(input("Enter co-eficiant b :"))
+c=float(input("Enter co-eficiant c :"))
+d=(b**2)-(4*a*c)
+print("d is ",d)
+if d>0:
+    print("Roots are real")
+    x=(-b+math.sqrt(d))/(2*a)
+    y=(-b-math.sqrt(d))/(2*a)
+    print("first sol :",x)
+    print("second sol:",y)
+elif d==0:
+    print("Roots are same ")
+    print(-b/2*a)
+else:
+    print("Roots are complex")
+    x=(-b-cmath.sqrt(d))/(2*a)
+    y=(-b+cmath.sqrt(d))/(2*a)
+    print("First solution ",x)
+    print("Second solution ",y)
+
+
+5. Write a Python program to swap two variables without temp variable?
+x=10
+y=15
+x=x+y
+y=x-y
+x=x-y
+print("value of x",x)
+print("value of y",y)
+					
