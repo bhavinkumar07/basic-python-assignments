@@ -1,0 +1,69 @@
+1. Write a Python Program to Find the Factorial of a Number?
+num=int(input("Enter a number : "))
+facto=1
+if num<0:
+    print("Negative number")
+elif num==0:
+    print("zero's Factorial is 1")
+else:
+    for i in range(1,num+1):
+        facto=facto*i
+    print(f"{num}'s factorial number is",facto)
+
+
+2. Write a Python Program to Display the multiplication Table?
+num=int(input("Enter Number  :  "))
+for i in range(1,11):
+    print(f" {num} * {i} = {num*i}")
+
+
+3. Write a Python Program to Print the Fibonacci sequence?
+num=int(input("Enter numnber : "))
+num1=0
+num2=1
+for i in range(0,num):
+    print(num1)
+    num3=num1+num2
+    num1=num2
+    num2=num3
+
+
+4. Write a Python Program to Check Armstrong Number?
+num = int(input("Enter number : "))
+digits = len(str(num))
+temp = num
+sum = 0
+while temp != 0:
+    k = temp % 10
+    sum=sum+(k**digits)
+    temp = temp//10
+if sum == num:
+    print(f'Given number {num} is an Armstrong Number')
+else:
+    print(f'Given number {num} is not an Armstrong Number')
+	
+	
+	
+5. Write a Python Program to Find Armstrong Number in an Interval?
+num1=int(input("Enter number  :"))
+num2=int(input("Enter number  :"))
+
+for number in range(num1,num2+1):
+    sum=0
+    temp=number
+    digit=len(str(number))
+    while temp != 0:
+        k=temp%10
+        sum=sum+(k**digit)
+        temp=temp//10
+    if sum==number:
+        print(f"Amstrong number between interval {num1} to {num2} is ------ {number}")     
+
+
+
+6. Write a Python Program to Find the Sum of Natural Numbers?
+num=int(input("Enter number  :  "))
+sum=0
+for i in range(1,num+1):
+    sum=i+sum
+print(f"Sum of {num} natural number is {sum}")    
