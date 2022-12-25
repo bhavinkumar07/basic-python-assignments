@@ -1,0 +1,74 @@
+1. Write a Python Program to Display Fibonacci Sequence Using Recursion?
+try:
+    def fibo(num):
+        if num <= 1:
+            return 1
+        else:
+            return (fibo(num-1) + fibo(num-2))
+
+    terms=int(input("Enter terms : "))
+
+    if terms <=0:
+        print("negative")
+    else:
+        print("fibonaci")
+        for i in range(terms):
+            print(fibo(i),end=" ")
+except Exception as e:
+    print(e)
+
+
+
+2. Write a Python Program to Find Factorial of Number Using Recursion?
+try:
+    def facto_rec(number):
+        if number==1:
+            return 1
+        else:
+            return number*facto_rec(number-1)
+
+    facto_terms=int(input("Enter number : "))
+    print(f"Factoria of {facto_terms} is ",facto_rec(facto_terms))
+except Exception as e:
+    print(e)
+
+    
+
+3. Write a Python Program to calculate your Body Mass Index?
+def bmi_calculatar():
+    try:
+        weight=int(input("Please enter your weight in K.G. "))
+        height=int(input("Please enter your weight in C.M. "))
+        bmi=(weight/(height**2))*1000
+        print("Your BMI is %.2f "%bmi)
+    except Exception as e:
+        print(e)
+
+
+
+4. Write a Python Program to calculate the natural logarithm of any number?
+import math
+def log_natural():
+    try:
+        number=int(input("Enter number : "))
+        print(f"Natural Log of {number} is ",math.log(number))
+    except Exception as e:
+        print(e)
+
+
+
+5. Write a Python Program for cube sum of first n natural numbers?
+try:
+    def cube_number():
+        num=int(input("Enter number : "))
+        sum=0
+        for i in range(1,num+1):
+            sum=sum+(i**3)
+        return sum
+        print(sum)
+    
+except Exception as e:
+    print(e)
+            
+            
+
