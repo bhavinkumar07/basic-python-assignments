@@ -1,0 +1,199 @@
+1. Write a python program to find sum of elements in list?
+def sum_list() :    
+    list_ = [1,2,3,4,100]
+    sum = 0
+    for i in range(len(list_)):
+        sum = sum + list_[i]
+    print(sum)
+sum_list()
+
+2. Write a python program to Multiply all numbers in the list?
+def multi_list() :    
+    list_ = [1,2,3,100,100]
+    multi = 1
+    for i in range(len(list_)):
+        multi = multi * list_[i]
+    print(multi)
+multi_list()
+
+3. Write a python program to find smallest number in list.
+def small_list():
+    
+    l=[10,12,3,24,51,16]
+    
+    element = l[1]
+    for i in range(len(l)):
+        if (element >= l[i]) :
+            element = l[i]
+    print(f"Smallest number in the list {l} is {element} ")
+    
+small_list()       
+
+4. Write a python program to find LARGEST number in list
+def largest_list():
+    
+    l=[10,12,3,24,51,160]
+    
+    element = l[1]
+    for i in range(len(l)):
+        if (element <= l[i]) :
+            element = l[i]
+    print(f"Largest number in the list {l} is {element} ")
+    
+largest_list()
+
+5. Write a python program to find a second largest number in the list.
+def largest_list():
+    
+    
+    element_1 = l_1[1]
+    for i in range(len(l_1)):
+        if (element_1 <= l_1[i]) :
+            element_1 = l_1[i]
+            ele = i
+            
+    print(f"Largest number in the list is {element_1} ")
+    
+    l_1.pop(ele)
+
+
+def second_largest_list(l_2):
+
+    element_2 = l_2[1]
+    for i in range(len(l_2)):
+        if (element_2 <= l_2[i]) :
+            element_2 = l_2[i]
+
+    print(f"Second largest number in the list is {element_2} ")
+    
+l_1 = [10,12,300,24,51,160]
+
+print("List is ",l_1)
+
+l_2 = list()
+
+largest_list()
+    
+l_2.append(l_1)
+    
+second_largest_list(l_1)
+
+OOOOOOOOORRRRRRRR WE CAN USE SLICING ALSO
+def second_largest():
+    list_n1 = [1,2,3,4,5,6]
+    n1 = 2
+    list_n1.sort()
+    print(f" {n1} largest number of list {list_n1} is ",list_n1[-n1])
+
+second_largest()
+
+
+
+6. Write a python program to find the N largest number from a list.
+def n_largest():
+    list_n = [1,2,5,4,8,3,5,71,455,65]
+    n = int(input("Please enter N "))
+    list_n.sort()
+    print(f"{n} largest number of list {list_n} is ",list_n[-n:])
+
+n_largest()
+
+7. Write a python program to print Even numbers in a list.
+def even_list():
+    list_even = [11,22,33,44,55,66,77,88,99]
+    even__ = list()
+    for number in list_even:
+        if number % 2 == 0:
+            even__.append(number)
+    print(f"List is {list_even}")
+    print("EVEN NUMBER IS")
+    for even in even__:
+        print(even , end = " ")
+even_list()
+
+8. Write a python program to print ODD numbers in a list.
+def odd_list():
+    list_odd = [11,22,33,44,55,66,77,88,99]
+    odd__ = list()
+    for number in list_odd:
+        if number % 2 != 0:
+            odd__.append(number)
+    print(f"List is {list_odd} ")
+    print("ODD NUMBER IS ")
+    for odd in odd__:
+        print(odd,end=" ")
+odd_list()
+
+9. Write a python program to remove empty list from a list.
+l_1 = [11,21,111,[],211,[],1,[],[],555,5555]
+l_2 = list()
+def remove_empty():
+    for elem in l_1:
+        if elem != []:
+            l_2.append(elem)
+    print(l_2)
+
+remove_empty()
+    
+	
+10. Write a python program to cloning or copying a list.
+
+list_11 = [1.1 , 2.2 , 3.3 , 4.4 , 5.5 ,6.6]
+copy_list_11 = list()
+
+def copying():
+    for pointer in range(len(list_11)):
+        copy_list_11.append(list_11[pointer])
+   
+    print("BEFORE COPY ", list_11)
+    print("AFTER COPY ", copy_list_11)
+
+copying()
+
+11. Write a python program to count occurances of an element in a list.
+def occurance(n):
+    counter_1 = 0
+    for i in occurance_list:
+        if i == n:
+            counter_1 = counter_1 + 1
+    print(f"Occurance of {n} is ",counter_1) 
+
+occurance_list = []
+
+number__1=int(input("How many elements you want to enter "))
+
+for i in range(0,number__1):
+    i = int(input("How many elements you want to enter "))
+    occurance_list.append(i)
+
+print("Your list is ",occurance_list)
+n = int(input("Enter element you want to count "))
+occurance(n)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
