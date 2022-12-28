@@ -1,0 +1,78 @@
+QUESTION 1:
+Write a function that takes a list and a number as arguments. Add the number to the end of
+the list, then remove the first element of the list. The function should then return the updated
+list.
+
+def question_1(list_1 ,num_1):
+    print("ORIGINAL LIST",list_1)
+    
+    list_1.append(num_1)
+    print(f"AFTER ADD {num_1} element ",list_1)
+    
+    list_1.pop(0)
+    print("AFTER REMOVING FIRST ELEMENT",list_1)
+
+list_1 = list()    
+    
+number = int(input("Enter number of elements you want to enter "))    
+ 
+for i in range(0,number):
+    i = int(input(f"Enter {i+1} element  "))
+    list_1.append(i)
+    
+num_1 = int(input("Enter number you want to add at the end "))
+
+question_1(list_1 ,num_1)
+
+QUESTION 2.
+
+def sorting_string(str):
+    
+    arranged_str = ""
+    str=input("Enter string : ")
+    return arranged_str.join(sorted(str))
+
+sorting_string(str)
+
+QUESTION 3.
+details = [{"name" : "bhavin" , "age" : 29 , "budget" : 23000},
+{"name" : "shraddha" , "age" : 27 , "budget" : 40000},
+{"name" : "kirtan" , "age" : 25 , "budget" : 2700}]
+def budget_total(details):
+    total_budget = 0
+    for i in range(0,len(details)):
+        total_budget = total_budget + details[i].get("budget")
+    print("Total budget is ",total_budget)
+    
+budget_total(details)
+
+
+QUESTION 4.
+
+try:
+    principal = int(input("Enter principal amount : "))
+    years = int(input("Enter years : "))
+    interest = int(input("Enter interest rate : "))
+    terms_per_year = int(input("Enter number to terms : "))
+
+    def question_4(principal , years , interest , terms_per_year):
+
+        investment =   principal*(1+(interest/(100*terms_per_year)))**(terms_per_year*years)
+        print("YOUR INVESTMENT IS %0.2f "%investment)
+        
+    question_4(principal , years , interest , terms_per_year)
+except Exception as e:
+    print(e)
+
+QUESTION 5.
+
+Write a function that takes a list of elements and returns only the integers.
+list_2 = [1,2,"bhavin",3,4,"saxena",3,"shraddha",3.41,"33", 3+4j,400]
+list_2_new = list()
+def question_2(list_2):
+    for i in list_2:
+        if type(i) == int :
+            list_2_new.append(i)
+    return list_2_new
+
+question_2(list_2)
