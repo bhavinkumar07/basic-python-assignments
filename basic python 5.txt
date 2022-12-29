@@ -1,0 +1,35 @@
+1. What does an empty dictionary's code look like?
+dic = dict()
+or
+dic = {}
+
+here dic is dictionary name
+
+2. What is the value of a dictionary value with the key 'foo' and the value 42?
+dict_values([42])
+
+3. What is the most significant distinction between a dictionary and a list?
+The most significant distinction is list is an orderded collection of data whereas dictionary is an unordered collection of data.
+Values of List have indexes whereas dictionary have unique key and its value.
+
+4. What happens if you try to access spam['foo'] if spam is {'bar': 100}?
+It will not give any output.
+
+5. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and
+'cat' in spam.keys()?
+There will be no diffrence in both cases as both will check whether "cat" is available in spam or not.
+ 
+6. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and
+'cat' in spam.values()?
+"cat" in spam will check whether "cat" key is there in spam or not.
+"cat" in spam will check whether the value is "cat" or not.
+
+7. What is a shortcut for the following code?
+if 'color' not in spam:
+spam['color'] = 'black'
+
+spam.setdefault("colour","black")
+
+8. How do you "pretty print" dictionary values using which module and function?
+
+pprint is a module and pprint.pformat() is a function.
