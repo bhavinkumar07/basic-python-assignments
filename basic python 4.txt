@@ -1,0 +1,85 @@
+1. What exactly is []?
+[] is asymbol of a list. For example if we want to make list by name date then date = [], we can define list which is empty at the declare time.
+We can add values in the list also.
+
+
+2. In a list of values stored in a variable called spam, how would you assign the value "hello" as the
+third value? (Assume [2, 4, 6, 8, 10] are in spam.)
+spam.insert(2,"hello")
+
+
+Let"s pretend the spam includes the list ["a", "b", "c", "d"] for the next three queries.
+
+
+3. What is the value of spam[int(int"3" * 2) / 11)]?
+It will show syntax error. 
+
+
+4. What is the value of spam[-1]?
+	'd'
+
+5. What is the value of spam[:2]?
+['a','b']
+
+Let"s pretend bacon has the list [3.14, "cat" ,11, "cat" , True] for the next three questions.
+
+6. What is the value of bacon.index"cat")?
+	1
+
+7. How does bacon.append(99) change the look of the list value in bacon?
+   [3.14, 'cat', 11, 'cat', True, 99]
+
+
+8. How does bacon.remove"cat") change the look of the list in bacon?
+[3.14, 11, 'cat', True, 99]
+
+9. What are the list concatenation and list replication operators?
+list concatenation operator is "+"
+replication operator is "*"
+
+
+10. What is difference between the list methods append() and insert()?
+append() method will add the element at the last position whereas insert() method will insert element at any postion where we want to wish. 
+For Example - becon.insert(1,555). In this example 555 will add at the 1st index .
+
+
+11. What are the two methods for removing items from a list?
+remove() and pop()
+
+
+12. Describe how list values and string values are identical.
+list is a mutable data structure. It is defined in square bracket []
+string is immutable structure. It is defined in double or single quots
+
+
+13. What"s the difference between tuples and lists?
+tuples are defined in simple bracket like (). It is immutable data structure.
+list are defined in square bracket like []. It is mutable data structure
+
+
+14. How do you type a tuple value that only contains the integer 42?
+	spam=(42)
+
+15. How do you get a list value"s tuple form? How do you get a tuple value"s list form?
+List to tuple 
+listttt= [1,2,3,4,"bhavin"]
+tuple(listttt)
+
+tuple to list
+tupple = (1,2,3,4,"hello")
+list(tupple)
+
+
+16. Variables that "contain" list values are not necessarily lists themselves. Instead, what do they
+contain?
+They contain references to list values
+
+17. How do you distinguish between copy.copy() and copy.deepcopy()?
+copy.copy() function will do a shallow copy means if any changes done to the copied object then it will reflect to to original object.
+copy.deepcopy() function will do a deep copy which means if any changes done to the copied object then it will not reflect to the original object.
+
+
+
+
+
+
