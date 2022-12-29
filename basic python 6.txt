@@ -1,0 +1,62 @@
+1. What are escape characters, and how do you use them?
+"\" backslash followed by the character we want to enter is a eacape character.
+If we want to type the string which have double quotes but to define the string double quotes are required at starting and at end of the siring, so
+system will give error. To remove the error we need to usr "\" backslash.
+Eg. We have string---- stri= "We are "Gujarati" people."  It will give error.
+So we can use ------- stri = "We are \"Gujarati\" people"
+
+2. What do the escape characters n and t stand for?
+\n ----- is for new line
+\t ----- is for tab
+
+3. What is the way to include backslash characters in a string?
+we can use \\ double slash to include backslash.
+or we can use triple quotes for string also.
+
+
+4. The string "Howl's Moving Castle" is a correct value. Why isn't the single quote character in the
+word Howl's not escaped a problem?
+
+
+5. How do you write a string of newlines if you don't want to use the n character?
+We can use triple quots for string so that we dont need to use n characters for new line. 
+
+6. What are the values of the given expressions?
+'Hello, world!'[1] -------'e'	
+'Hello, world!'[0:5] -----'Hello'
+'Hello, world!'[:5] ------'Hello'
+'Hello, world!'[3:]-------'lo, world!'
+
+
+
+7. What are the values of the following expressions?
+'Hello'.upper() ------'HELLO'
+'Hello'.upper().isupper()---- True
+'Hello'.upper().lower()----- hello
+
+
+8. What are the values of the following expressions?
+'Remember, remember, the fifth of July.'.split()
+['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.']
+
+
+'-'.join('There can only one.'.split())
+'There-can-only-one.'
+
+9. What are the methods for right-justifying, left-justifying, and centering a string?
+ljust()--- For lefe justifying
+rjust()--- For Right justifying
+center()-- For centering a string
+
+
+
+10. What is the best way to remove whitespace characters from the start or end?
+strip() built in function can be used for removing whitespace characters from start or end
+
+
+
+
+
+
+
+
