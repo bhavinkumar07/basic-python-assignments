@@ -1,0 +1,109 @@
+1. Write a Python program to check if the given number is a Disarium Number?
+def diss():
+    count = 0
+    x = int(input("Please Enter number : "))
+    xx = x
+    yy = x
+    while (x != 0):
+        x = x // 10
+        count = count + 1
+    
+    num = 0
+    while (count != 0):
+        xxx = xx % 10
+        num = num + (xxx ** count)
+        xx = xx // 10
+        count = count - 1
+    
+    if (yy == num):
+        print("DISSARIUM NUMBER")
+    else:
+        print("NOT DISSARIUM NUMBER")
+
+2. Write a Python program to print all disarium numbers between 1 to 100?
+def diss_count():
+    count = 0
+    for x in range(1,101):
+        xx = x
+        yy = x
+        while (x != 0):
+            x = x // 10
+            count = count + 1
+
+        num = 0
+        while (count != 0):
+            xxx = xx % 10
+            num = num + (xxx ** count)
+            xx = xx // 10
+            count = count - 1
+
+        if (yy == num):
+            print("DISSARIUM NUMBER is",yy)
+
+3. Write a Python program to check if the given number is Happy Number?
+def happy_number(n):
+    m=number = 0
+    while (n > 0):    
+        m = n % 10
+        number = number + (m ** 2)
+        n = n // 10
+    return number
+n = int(input("number "))
+result = n
+while (result != 1 and result !=4):
+    result = happy_number(result)
+    
+if result == 1:
+    print("happy number")
+elif result == 4:
+    print("not happy")
+
+4. Write a Python program to print all happy numbers between 1 and 100?
+def happy_number(n):
+    m=number = 0
+    while (n > 0):    
+        m = n % 10
+        number = number + (m ** 2)
+        n = n // 10
+    return number
+for i in range(1,101):
+    n = i
+    result = n
+    while (result != 1 and result !=4):
+        result = happy_number(result)
+
+    if result == 1:
+        print(i)
+    
+5. Write a Python program to determine whether the given number is a Harshad Number?
+def harshad_number(n):
+    number = 0
+    nn = n
+    while (n != 0):
+        m = n % 10
+        number = number + m
+        n = n // 10
+    if (nn % number == 0):
+        print(f"Yes {nn} is a harshad Number")
+    else:
+        print(f"NO {nn} is not a harshad number")
+
+
+6. Write a Python program to print all pronic numbers between 1 and 100?
+def factors_number1(num):
+    l = []
+    number = num
+    for i in range(1,num+1):
+        if num % i == 0:
+            l.append(i)
+    l.sort()
+    m = n = 0
+    for i in range(len(l)-1):
+        if l[i+1] - l[i] == 1:
+            m = l[i+1]
+            n = l[i]
+    if (m * n) == number:
+        print(number)
+
+for nn in range(1,101):
+    factors_number1(nn)   
