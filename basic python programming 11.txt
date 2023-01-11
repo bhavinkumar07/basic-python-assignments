@@ -1,0 +1,118 @@
+1. Write a Python program to find words which are greater than given length k?
+def test1():
+    st = input("please enter string ")
+    l1 = st.split()
+    l2 = []
+    k = 3
+    for i in l1:
+        if len(i) > 3:
+            l2.append(i)
+    
+    return l2
+
+
+
+2. Write a Python program for removing i-th character from a string?
+def remove_char():
+    s = input("Enter string : ")
+    n = int(input("Enter number of character of string : "))
+    ss = ""
+    for i in range(1, len(s)+1):
+        if (i) == n:
+            continue
+        ss = ss + s[i-1]
+    print(f"After removing {n}th character from {s} is {ss}")
+
+
+3. Write a Python program to split and join a string?
+sentence = "This is my laptop"
+temp = ""
+temp_ = ""
+result = []
+split_ = " "
+
+
+for char in sentence:
+    if char == split_:
+        result.append(temp)
+        temp = ""
+    else:
+        temp += char
+        
+result.append(temp)
+print(result)
+tttmp = ""
+join_ = "+"
+
+for i in range(len(result)):
+    if i != (len(result)-1):
+        tttmp = tttmp + result[i] + join_
+    else:
+        tttmp = tttmp + result[i] 
+print(tttmp)
+
+
+
+
+4. Write a Python to check if a given string is binary string or not?
+def is_binary(a):
+    #a=input("Please Enter String : ")
+    b="01"
+    count= True
+    for i in a:
+        if i not in b:
+            count= False
+    if count == False:
+        print(f"{a} is not a binary")
+    else:
+        print(f"{a} is a binary")
+
+
+
+
+5. Write a Python program to find uncommon words from two Strings?
+string_1 = input("Enter string 1 :")
+string_list1 = string_1.split()
+
+string_2 = input("Enter string 2 :")
+string_list2 = string_2.split()
+
+result_list = []
+for word in string_list1:
+    if word not in string_list2:
+        result_list.append(word)
+        
+for word in string_list2:
+    if word not in string_list1:
+        result_list.append(word)
+
+print(str(result_list))
+
+
+
+6. Write a Python to find all duplicate characters in string?
+stri = "shraddha"
+duplicate_char = []
+for letter in stri:
+    if letter not in duplicate_char and stri.count(letter) >= 2:
+        duplicate_char.append(letter)
+print(" ".join(duplicate_char))
+
+
+
+7. Write a Python Program to check if a string contains any special character?
+def testtt(input_string):
+    special_char = """+-*/?/]}[{=+-_)";"(*&^%$#@!"""
+    flag = False
+    for char in input_string:
+        if char in special_char:
+            flag = True
+    
+    if flag == True:
+        print("String is having special character")
+    else:
+        print("String is not having special character")
+
+
+
+
