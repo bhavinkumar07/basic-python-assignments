@@ -1,0 +1,174 @@
+Question 1:
+Write a program that calculates and prints the value according to the given formula:
+Q = Square root of [(2 * C * D)/H]
+Following are the fixed values of C and H:
+C is 50. H is 30.
+D is the variable whose values should be input to your program in a comma-separated
+sequence.
+Example
+Let us assume the following comma separated input sequence is given to the program:
+100,150,180
+The output of the program should be:
+18,22,24
+
+string_ = '100,150,180'
+temp = ""
+number_list = string_.split(",") 
+
+C = 50
+H = 30
+
+result = []
+for i in number_list:
+    Q = ((2 * C * int(i)) / H ) ** (1/2)
+    result.append(int(Q))
+
+result_str = "{},{},{}".format(*result)
+print(result_str)
+
+
+
+Question 2:
+Write a program which takes 2 digits, X,Y as input and generates a 2-dimensional array. The
+element value in the i-th row and j-th column of the array should be i*j.
+Note: i=0,1.., X-1; j=0,1,¡Y-1.
+Example
+Suppose the following inputs are given to the program:
+3,5
+Then, the output of the program should be:
+[[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]]
+
+row = int(input("Please Enter Number of rows"))
+column = int(input("Please Enter Number of column"))
+
+max_list = []
+
+for i in range(row):
+    mini_list = []
+    for j in  range(column):
+        mini_list.append(i*j)
+    max_list.append(mini_list)
+
+print(max_list)
+
+
+Question 3:
+Write a program that accepts a comma separated sequence of words as input and prints the
+words in a comma-separated sequence after sorting them alphabetically.
+Suppose the following input is supplied to the program:
+without,hello,bag,world
+Then, the output should be:
+bag,hello,without,world
+
+def hello():
+    input_string = input()
+    list_string = input_string.split(",")
+    list_string.sort()
+    str_ = ",".join(list_string)
+    
+    print(str_)
+
+
+Question 4:
+Write a program that accepts a sequence of whitespace separated words as input and prints
+the words after removing all duplicate words and sorting them alphanumerically.
+Suppose the following input is supplied to the program:
+hello world and practice makes perfect and hello world again
+Then, the output should be:
+again and hello makes perfect practice world
+
+
+string_input = input()
+split_list = string_input.split()
+
+set_ = set(split_list)
+
+list_ = list(set_)
+
+list_.sort()
+
+print(" ".join(list_))
+
+
+
+
+
+Question 5:
+Write a program that accepts a sentence and calculate the number of letters and digits.
+Suppose the following input is supplied to the program:
+hello world! 123
+Then, the output should be:
+LETTERS 10
+
+DIGITS 3
+
+
+sentence = input()
+count_letter = 0
+count_number = 0
+
+capital_alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+small_alphabets = "abcdefghijklmnopqrstuvwxyz"
+numbers = "1234567890"
+
+for element in sentence:
+    if element in capital_alphabets or element in small_alphabets:
+        count_letter += 1
+    if element in numbers:
+        count_number += 1
+
+print("Letter is ",count_letter)        
+print("Number is ",count_number)
+
+
+
+
+
+Question 6:
+A website requires the users to input username and password to register. Write a program to
+check the validity of password input by users.
+Following are the criteria for checking the password:
+1. At least 1 letter between [a-z]
+2. At least 1 number between [0-9]
+1. At least 1 letter between [A-Z]
+3. At least 1 character from [$#@]
+4. Minimum length of transaction password: 6
+5. Maximum length of transaction password: 12
+Your program should accept a sequence of comma separated passwords and will check them
+according to the above criteria. Passwords that match the criteria are to be printed, each
+separated by a comma.
+Example
+If the following passwords are given as input to the program:
+ABd1234@1,a F1#,2w3E*,2We3345
+Then, the output of the program should be:
+ABd1234@1
+
+
+
+
+
+def password(list_password):
+    
+    sentence_list = list_password.split(",")
+
+    capital_alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    small_alphabets = "abcdefghijklmnopqrstuvwxyz"
+    numbers = "1234567890"
+    special_character = """?><":}{+_)(*&^%$#@!~.+-*//.,';][=-`"""
+
+    for sentence in sentence_list:
+
+        if len(sentence) >= 6 and len(sentence) <= 12:
+            flag_ = True
+            for element in sentence:
+                if (element in capital_alphabets) and (element in small_alphabets) and (element in numbers) and (element in special_character):
+                    flag_ = True
+        else:
+            flag_
+            
+        while True:
+            return sentence
+
+        
+list_password = input()
+password(list_password)
