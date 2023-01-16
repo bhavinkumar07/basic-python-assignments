@@ -1,0 +1,63 @@
+Question1
+Create a function that takes a string and returns a string in which each character is repeated
+once.
+
+
+def double_char(String_):
+    double_string = ""
+    for i in String_:
+        double_string = double_string + i + i 
+    return double_string
+
+
+
+Question2
+Create a function that reverses a boolean value and returns the string "boolean expected"
+if another variable type is given.
+
+def reverse(boolean):
+    if type(boolean) == bool:
+        if boolean == True:
+            return False
+        else:
+            return True
+    else:
+        return "Boolean Expected"
+
+
+Question3
+
+
+Create a function that returns the thickness (in meters) of a piece of paper after folding it n
+number of times. The paper starts off with a thickness of 0.5mm.
+Examples
+
+def num_layers(times):
+    thickness = (2 ** (times-1)) / 1000
+    print(thickness,"m")
+
+Question4
+
+Create a function that takes a single string as argument and returns an ordered list containing
+the indices of all capital letters in the string.
+
+def index_of_capital(word):
+    capital = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    listt = []
+    for i in word:
+        if i in capital:
+            listt.append(word.index(i))
+    return listt
+
+Question5
+Using list comprehensions, create a function that finds all even numbers from 1 to the given
+number.
+
+def _find_even_numbers(numbeer):
+    _list_ = []
+    numm = 1
+    while numm <= numbeer:
+        if numm % 2 == 0:
+            _list_.append(numm)
+        numm = numm + 1
+    return _list_
