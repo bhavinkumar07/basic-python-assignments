@@ -1,0 +1,82 @@
+Question 1
+Create a function that takes a list of non-negative integers and strings and return a new list
+without the strings.
+
+def filter_test(l):
+    new_list = []
+    for i in l:
+        if type(i) == int:
+            new_list.append(i)
+    return new_list
+
+
+Question 2
+The &quot;Reverser&quot; takes a string as input and returns that string in reverse order, with the
+opposite case.
+
+
+def reverse(s):
+    new_s = s[::-1]
+    return new_s.swapcase()
+    
+
+Question 3
+You can assign variables from lists like this:
+lst = [1, 2, 3, 4, 5, 6]
+first = lst[0]
+middle = lst[1:-1]
+last = lst[-1]
+print(first) ➞ outputs 1
+print(middle) ➞ outputs [2, 3, 4, 5]
+print(last) ➞ outputs 6
+With Python 3, you can assign variables from lists in a much more succinct way. Create
+variables first, middle and last from the given list using destructuring assignment
+(check the Resources tab for some examples), where:
+first ➞ 1
+middle ➞ [2, 3, 4, 5]
+last ➞ 6
+
+Your task is to unpack the list writeyourcodehere into three variables, being first,
+middle, and last, with middle being everything in between the first and last element. Then
+print all three variables.
+
+
+writeyourcodehere = [1,2,3,4,5,6,7,8,9]
+
+first ,middle ,last = writeyourcodehere[0], writeyourcodehere[1 :-1], writeyourcodehere[-1]
+
+print(f"First element is {first} , second element is {middle} and last element is  {last}")
+
+
+
+
+Question 4
+Write a function that calculates the factorial of a number recursively.
+Examples
+
+def facto(a):
+    if a == 1:
+        return 1
+    elif a == 0:
+        print("You entered zero")
+    elif a < 1:
+        print("Please enter positive number")
+    else:
+        factorial = a * facto(a-1)
+        return factorial
+
+
+Question 5
+Write a function that moves all elements of one type to the end of the list.
+
+def move_to_(lll,x):
+    for i in lll:
+        if i == x :
+            lll.append(lll.pop(lll.index(i)))
+    return lll
+	
+
+
+
+
+
