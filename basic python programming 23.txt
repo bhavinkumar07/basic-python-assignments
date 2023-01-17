@@ -1,0 +1,76 @@
+Question 1
+Create a function that takes a number as an argument and returns True or False depending
+on whether the number is symmetrical or not. A number is symmetrical when it is the same as
+its reverse.
+
+def is_symmetrical(number):
+    number_string = str(number)
+    number_string_list1 = []
+    number_string_list2 = []
+    
+    flag = True
+    
+    for char in number_string:
+        number_string_list1.append(char)
+        number_string_list2.append(char)
+    number_string_list2.reverse()
+    
+    for char1, char2 in zip(number_string_list1,number_string_list2):
+        if char1 != char2:
+            flag = False
+    return flag
+    
+
+Question 2
+Given a string of numbers separated by a comma and space, return the product of the
+numbers.
+
+def multi(string):
+    string_list = string.split(", ")
+    result = 1
+    for digit in string_list:
+        result = result * int(digit)
+    return result
+
+
+Question 3
+Create a function that squares every digit of a number.
+
+def square_digit(number):
+    number_to_string = str(number)
+    number_list = []
+    number_list_square = []
+    square_string = ""
+    
+    for number in number_to_string:
+        number_list.append(number)
+    
+    for number in number_list:
+        number_list_square.append(int(number)**2)
+    
+    for char in number_list_square:
+        square_string = square_string + str(char)
+    
+    return int(square_string)
+
+Question 4
+Create a function that sorts a list and removes all duplicate items from it.
+
+def setify(list_):
+    tuple_ = set(list_)
+    return list(tuple_)
+
+
+Question 5
+Create a function that returns the mean of all digits.
+
+
+def mean(number):
+    count = 0
+    summ = 0
+    while (number != 0):
+        number2 = number % 10
+        number = number // 10
+        summ = summ + number2
+        count = count + 1
+    return int(summ/count)
