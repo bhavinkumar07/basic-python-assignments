@@ -1,0 +1,50 @@
+Question1. Write a function that stutters a word as if someone is struggling to read it. The
+first two letters are repeated twice with an ellipsis ... and space after each, and then the
+word is pronounced with a question mark ?.
+
+def stutter(string):
+    stutter_string = string[0] + string[1] + "... " + string[0] + string[1] + "... "
+    for char in string:
+        stutter_string = stutter_string + char
+    return stutter_string + "?"
+
+
+Question 2.Create a function that takes an angle in radians and returns the corresponding
+angle in degrees rounded to one decimal place.
+
+def radians_to_degree(radians):
+    return round((radians * 180) / (22/7),1)
+
+
+Question 3. In this challenge, establish if a given integer num is a Curzon number. If 1 plus
+2 elevated to num is exactly divisible by 1 plus 2 multiplied by num, then num is a Curzon
+number.
+Given a non-negative integer num, implement a function that returns True if num is a Curzon
+number, or False otherwise.
+
+def is_curson(number):
+    number_1 = (2 ** number) + 1 
+    number_2 = (2 * number) + 1
+    if (number_1 % number_2) == 0 :
+        return True
+    else:
+        return False
+
+
+Question 4.Given the side length x find the area of a hexagon.
+
+def area_of_hexagon(side):
+    return round((3*(3**(1/2))*(side**2))/2,1)
+
+Question 5. Create a function that returns a base-2 (binary) representation of a base-10
+(decimal) string number. To convert is simple: ((2) means base-2 and (10) means base-10)
+
+def binary(number):
+    binary_ = ""
+    while number != 0 :
+        if number % 2 == 0:
+            binary_ = "0" + binary_
+        else:
+            binary_ = "1" + binary_
+        number = number // 2
+    return binary_
