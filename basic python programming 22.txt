@@ -1,0 +1,82 @@
+Question1
+Create a function that takes three parameters where:
+ x is the start of the range (inclusive).
+ y is the end of the range (inclusive).
+ n is the divisor to be checked against.
+Return an ordered list with numbers in the range that are divisible by the third parameter n.
+Return an empty list if there are no numbers that are divisible by n.
+
+def list_operation(x,y,z):
+    result = []
+    for i in range(x,y+1):
+        if i % z == 0:
+            result.append(i)
+    return result
+	
+	
+Question2
+Create a function that takes in two lists and returns True if the second list follows the first list
+by one element, and False otherwise. In other words, determine if the second list is the first
+list shifted to the right by 1.
+
+def simon_says(list_1, list_2):
+    if (list_1[-1] - list_2[-1]) == 1 :
+        return True
+    else:
+        return False
+
+
+Question3
+A group of friends have decided to start a secret society. The name will be the first letter of
+each of their names, sorted in alphabetical order.
+Create a function that takes in a list of names and returns the name of the secret society.
+
+def society_name(listt):
+    secret = ""
+    listt.sort()
+    for i in listt:
+        secret = secret + i[0]
+    return secret
+
+Question4
+An isogram is a word that has no duplicate letters. Create a function that takes a string and
+returns either True or False depending on whether or not it's an "isogram".
+
+
+def is_isogram(string):
+    result = string.lower()
+    char_list = []
+    for char in result:
+        if char in char_list:
+            return False
+        char_list.append(char) 
+    return True
+
+
+Question5
+Create a function that takes a string and returns True or False, depending on whether the
+characters are in order or not.
+Examples
+is_in_order("abc") ➞ True
+is_in_order("edabit") ➞ False
+is_in_order("123") ➞ True
+is_in_order("xyzz") ➞ True
+Notes
+You don't have to handle empty strings.
+
+def is_in_order(stri):
+    listt = []
+    flag = True
+    for i in stri:
+        strr = ""
+        listt.append(i)
+        listt.sort()
+    for i in listt:
+        strr = strr + i
+    for i,j in zip(stri,strr):
+        if i == j:
+            return True
+        else:
+            return False
+
+
