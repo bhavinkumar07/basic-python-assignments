@@ -1,0 +1,61 @@
+Question1
+Create a function that takes three integer arguments (a, b, c) and returns the amount of
+integers which are of equal value.
+
+def equal(a, b ,c):
+    count = 0
+    if a==b and a == c:
+        return 3
+    elif a == b or a == c :
+        return 2
+    elif b == c:
+        return 2
+    else:
+        return 0
+
+Question2
+Write a function that converts a dictionary into a list of keys-values tuples.
+
+
+def dict_to_value(dictionary):
+    return sorted((dictionary.items()))
+	
+	
+Question3
+Write a function that creates a dictionary with each (key, value) pair being the (lower case,
+upper case) versions of a letter, respectively.
+
+def mapping(lis):
+    dicti = {}
+    for i in range(len(lis)):
+        dicti.update({lis[i]:lis[i].upper()})
+    print(dicti)All of the letters in the input list will always be lowercase.
+
+Question4
+Write a function, that replaces all vowels in a string with a specified vowel.
+
+def vow_replace(string, ch):
+    vovel = "aeiou"
+    new_string = ""
+    for char in string:
+        if char in vovel:
+            char = ch
+            
+        new_string = new_string + char
+    
+    return new_string
+
+
+Question5
+Create a function that takes a string as input and capitalizes a letter if its ASCII code is even
+and returns its lower case version if its ASCII code is odd.
+
+
+def ascii_capatlize(ss):  
+    new_ss = ""
+    for i in ss:
+        if ord(i) % 2 == 0:
+            new_ss = new_ss + i.upper()
+        else:
+            new_ss = new_ss + i.lower()
+    print(new_ss)
