@@ -1,0 +1,56 @@
+Question1. Create a function that takes three arguments a, b, c and returns the sum of the
+numbers that are evenly divided by c from the range a, b inclusive.
+
+def evenly_divisible(a, b, c):
+    result_list = []
+    for i in range(a,b+1):
+        if i % c == 0:
+            result_list.append(i)
+    return sum(result_list)    
+
+Question2. Create a function that returns True if a given inequality expression is correct and
+False otherwise.
+
+def correct_signs(sign):
+    result_sing=eval(sign)
+    if result_sing:
+        return True
+    else:
+        return False 
+Question3. Create a function that replaces all the vowels in a string with a specified character.
+
+
+def replace_vovels(string , special_char):
+    vovels = "aeiouAEIOU"
+    replaced_vovel = ""
+    for char in string:
+        if char in vovels:
+            char = special_char
+        replaced_vovel = replaced_vovel + char
+    
+    return replaced_vovel
+
+Question4. Write a function that calculates the factorial of a number recursively.
+
+
+def factorial(number):
+    if number == 0:
+        return 1
+    elif number == 1:
+        return 1
+    else:
+        while number != 1 :
+            return (number * factorial(number-1))
+        number = number - 1
+    
+
+Question 5
+Hamming distance is the number of characters that differ between two strings.
+To illustrate:
+
+def hamming_distance(string_1, string_2):
+    count = 0
+    for char_1, char_2 in zip (string_1, string_2):
+        if char_1 != char_2:
+            count = count + 1
+    return count
