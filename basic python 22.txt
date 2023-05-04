@@ -1,0 +1,101 @@
+1. What is the result of the code, and explain?
+
+>>> X = "iNeuron"
+>>> def func():
+		print(X)
+
+>>> func()
+
+Output--->
+
+iNeuron
+
+
+In the above code the value of x is defined outside the function so when we call the function the value remains same.
+
+2. What is the result of the code, and explain?
+
+>>> X = "iNeuron"
+>>> def func():
+X = "NI!"
+
+>>> func()
+>>> print(X)
+
+Output---> iNeuron
+
+In the above code the value of X is defined outside the function and in side function as well but when we call X outside the function the value will remain same which is outside the function.
+
+3. What does this code print, and why?
+
+>>> X = "iNeuron"
+>>> def func():
+X = "NI"
+print(X)
+
+>>> func()
+>>> print(X)
+
+Output--->
+
+NI
+iNeuron
+
+
+The reason of above output is that X is also called in func() as well as outside function so both values will display.
+ 
+
+4. What output does this code produce? Why?
+
+>>> X = "iNeuron"
+>>> def func():
+global X
+X = "NI"
+
+>>> func()
+>>> print(X)
+
+Output--->
+
+NI
+
+In the above code globle keyword is used so that the value will be same throughouth the code.
+
+
+5. What about this code—what’s the output, and why?
+
+>>> X = "iNeuron"
+>>> def func():
+X = "NI"
+def nested():
+print(X)
+nested()
+
+>>> func()
+>>> X
+
+output---->  
+NI
+'iNeuron'
+
+In the above code when func() is called the value of X will be called which is inside the function because it is called inside nested().
+But when X is called it will return outside scope.
+
+
+6. How about this code: what is its output in Python 3, and explain?
+
+	>>> def func():
+	X = "NI"
+	def nested():
+	nonlocal X
+	X = "Spam"
+	nested()
+	print(X)
+
+>>> func()
+
+Output--->>
+Spam
+
+Nonlocal keyword is used inside nested function. 
+When we call it it will ans nonlocal X.
