@@ -1,0 +1,59 @@
+1. What is the relationship between def statements and lambda expressions ?
+
+def statements can take more than one line and is used for more complex programs and logic.
+lamda is one line function and is used for time saving. It is one liner code and is used for simple and one line logic.
+
+
+2. What is the benefit of lambda?
+
+lamda is used for time saving and if the logic is not more complex.
+In def multiliner program is used so if we need sum , minus kind of one liner logic then lamda is good option.
+
+
+3. Compare and contrast map, filter, and reduce.
+The basic function of map() is to manipulate iterables. Map executes all the conditions of a function on the items in the iterable.
+
+filter() is used to filter the iterables as per the conditions. Filter filters the original iterable and passes the
+items that returns True for the function provided to filter. Therefore only the items in the iterables can be expected to be seen in the output. 
+
+If you already have list of values, but you want to use the values in that list to create something completely new, in these type of situations 
+it is better to use the reduce method
+
+
+4. What are function annotations, and how are they used?
+Function annotations are arbitrary python expressions that are associated with various part of functions.
+These expressions are evaluated at compile time and have no life in python’s runtime environment.
+Python does not attach any meaning to these annotations. They take life when interpreted by third party libraries, for example, mypy.
+
+
+
+5.What are recursive functions, and how are they used?
+In Python, we know that a function can call other functions. It is even possible for the function to call itself.
+These types of construct are termed as recursive functions.
+
+def factorial(x):
+    if x == 1:
+        return 1
+    else:
+        return (x * factorial(x-1))
+
+num = 3
+print(factorial(num))
+
+
+6. What are some general design guidelines for coding functions?
+
+Its name must be unique and its name must be related to its program so that we can easily find it.
+Lengthy functions are very difficult to understand. That’s why functions should be small enough to
+carry out small work and lengthy functions should be broken into small ones for completing small tasks
+All functions that encountering an error condition should either return a 0 or 1 for simplifying the debugging.
+There must be a space after giving a comma between two function arguments.
+
+7. Name three or more ways that functions can communicate results to a caller.
+First is built in function
+Second is user defined function using def keyword
+Third is lambda function which is one liner function
+
+
+
+
